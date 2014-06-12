@@ -17,18 +17,15 @@ puts "jill is #{jill.last_name}"
 puts "tom's last name is #{tom.last_name}"
 puts "tom's first name is #{tom.first_name}"
 
-puts "tom's full name is #{tom.full_name}"
+#puts "tom's full name is #{tom.full_name}"
 
 
 
 puts "#{tom.age}"
 
-tom.current_smoker = false
-tom.married_status = false
-#what is the value of give insurance, should or should not
-msg = tom.give_insurance? ? "should" : "should not"
-msg_marry = tom.married? ? "He should get a girlfriend" : "He should stay single"
-puts "Tom #{msg} get insured"
-puts "Tom #{msg_marry}"
+
+jack = Person.new("Jack", "Taylor", '06-01-1999')
+
+puts jack.inspect
 
 
